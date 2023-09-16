@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(165, 94, 0);
+}
+
+nav {
+  background-color: antiquewhite;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: center;
+  border-bottom: 2px rgb(165, 94, 0) solid;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: rgb(165, 94, 0);
+  width: 50px;
+  height: 7px;
+  margin: 3px;
+}
+
+.title {
+  align-self: flex-start;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+  font-size: 200%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: antiquewhite;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+h2 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    height: 80px;
+    align-items: center;
+  }
+
+  .menu-item {
+    list-style: none;
+    width: 5em;
+    font-size: 125%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  .menu-item:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    align-self: center;
+    width: 90px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger:hover .bar {
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+}
