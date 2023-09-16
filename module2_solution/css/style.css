@@ -47,6 +47,7 @@ h1.title {
 .section_content {
   font-size: 0.4em;
   padding: 0.5em;
+  overflow: auto;
 }
 
 #title-1 {
